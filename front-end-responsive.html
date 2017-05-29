@@ -441,7 +441,7 @@ hr.jeweled {
 						//    Format number
 						if( String( sId ).length <= 2){ sId = String("0" + sId).slice(-2); } 
 						//    Create content media cards
-						mediaCards.addCard( new MediaCard(sId, oCntr.catg, meta.description, meta.duration, meta.longTitle, meta.name , meta.publishDate, val.thumbnail, meta.title, meta.url, meta.headline, meta.headerImageUrl, meta.subHeadline) );
+						mediaCards.addCard( new MediaCard(sId, oCntr.catg, meta.description, meta.duration, meta.longTitle, meta.name , meta.publishDate, val.thumbnails[0].url, meta.title, meta.url, meta.headline, meta.headerImageUrl, meta.subHeadline) );
 					});
 					oCntr.cb(); //  McCallback
 				}).error(function() { alert("Cannot reach IGN API"); });
